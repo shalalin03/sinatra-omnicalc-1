@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Random Number Results</title>
+</head>
+<body>
+  <h1>Random Number Results</h1>
+  <dl>
+    <dt>Minimum</dt>
+    <dd><%= @min %></dd>
+
+    <dt>Maximum</dt>
+    <dd><%= @max %></dd>
+
+    <dt>Random Number</dt>
+    <dd>
+      <% if @random_number.is_a?(String) %>
+        <%= @random_number %>
+      <% else %>
+        <%= @random_number %>
+      <% end %>
+    </dd>
+  </dl>
+  <a href="/random/new">Pick Another</a>
+</body>
+</html>
